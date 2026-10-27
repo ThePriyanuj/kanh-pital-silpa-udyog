@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Samarkan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Samarkan'),
+    url('/fonts/SAMARN__.woff') format('woff'),
+    url('https://fonts.cdnfonts.com/s/5790/SAMARN__.woff') format('woff');
+  font-display: swap;
+}
+
+.font-samarkan {
+  font-family: 'Samarkan', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', 'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Outfit', 'Noto Sans Bengali', system-ui, -apple-system, sans-serif;
+    --font-as: 'Noto Sans Bengali', 'Noto Serif Bengali', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: #0F172A;
+  }
+
+  /* High legibility heading style */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  /* Assamese text styling */
+  [lang="as"],
+  .font-assamese {
+    font-family: 'Noto Sans Bengali', 'Noto Serif Bengali', system-ui, sans-serif;
+  }
+}
+
+.font-serif-heritage {
+  font-family: 'Outfit', 'Plus Jakarta Sans', 'Noto Sans Bengali', sans-serif;
+}
+
+.font-assamese {
+  font-family: 'Noto Sans Bengali', 'Noto Serif Bengali', sans-serif;
+}
+
+/* Hide scrollbar for category pills while allowing horizontal smooth swipe */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+   REAL METALLIC GOLD EFFECT (ULTRA-LIGHTWEIGHT / STATIC)
+   Optimized for universal 60fps rendering on all mobile & desktop devices
+   Zero CPU/GPU animation overhead
+   ========================================================================== */
+
+/* 1. Real Metallic Gold Text Effect (Static Gradient) */
+.gold-gradient-text {
+  background: linear-gradient(120deg,
+      #8f5c0a 0%,
+      #d99e28 20%,
+      #fff2b8 38%,
+      #c98d1a 58%,
+      #734404 78%,
+      #d99e28 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 700;
+}
+
+/* 2. Real Metallic Gold Button (Chiseled Bevel & Bullion Surface - Static) */
+.btn-gold-metallic {
+  background: linear-gradient(135deg,
+      #c49622 0%,
+      #ebd076 20%,
+      #fff3ba 38%,
+      #d7a832 58%,
+      #9f6f14 78%,
+      #ebd076 100%);
+  color: #261603 !important;
+  font-weight: 700;
+  border: 1px solid rgba(255, 238, 165, 0.85) !important;
+  box-shadow:
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -1.5px 2px 0 rgba(92, 59, 10, 0.35),
+    0 2px 6px -1px rgba(184, 134, 11, 0.3);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  text-decoration: none;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.btn-gold-metallic>* {
+  color: inherit;
+}
+
+.btn-gold-metallic:hover {
+  filter: brightness(1.06);
+  box-shadow:
+    inset 0 1px 1px 0 rgba(255, 255, 255, 1),
+    inset 0 -1px 2px 0 rgba(92, 59, 10, 0.3),
+    0 4px 12px -1px rgba(184, 134, 11, 0.4);
+}
+
+.btn-gold-metallic:active {
+  transform: scale(0.98);
+  box-shadow:
+    inset 0 1.5px 3px 0 rgba(92, 59, 10, 0.45),
+    0 1px 3px rgba(184, 134, 11, 0.2);
+}
+
+/* 3. Metallic Gold Badge & Trust Indicator (Static) */
+.badge-gold-metallic {
+  background: linear-gradient(135deg,
+      #fffdf5 0%,
+      #fef7dc 25%,
+      #fae8a5 60%,
+      #f7d97b 100%);
+  color: #734504 !important;
+  border: 1px solid rgba(212, 175, 55, 0.5) !important;
+  box-shadow:
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.9),
+    0 1px 4px -1px rgba(184, 134, 11, 0.15);
+  transition: filter 0.15s ease;
+}
+
+.badge-gold-metallic:hover {
+  filter: brightness(1.04);
+}
+
+/* 4. Metallic Gold Border Accent */
+.border-gold-metallic {
+  border-color: rgba(212, 175, 55, 0.6);
+}

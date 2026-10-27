@@ -1,0 +1,6 @@
+{
+  "name": "Kanh Pital Silpa Udyog Pratisthan",
+  "description": "Authentic handmade Sarthebari bell metal (Kanh) and Hajo brassware (Pital) store in Nagaon, Assam. Established in 1979.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
